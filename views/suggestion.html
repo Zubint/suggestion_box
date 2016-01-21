@@ -1,0 +1,24 @@
+<!--Suggestions.html -->
+
+		<!-- Display the recipe at the top of the page -->
+
+			<div class="postbkg"> 
+				<div class="recipeContainer">
+						<h3>{{posts.title}} </h3>
+						<p> {{posts.maining}}</p>
+						<p>
+							<i class="fa fa-thumbs-up"></i>
+						 Upvotes: {{post.upvotes}}
+						</p> 
+						<p>See comments for this recipe:</p> 
+				</div>
+
+				<div class="recipeContainer" ng-repeat="body in post.comments">
+					<p>{{body.body}}</p>
+					<p>
+						<i class="fa fa-thumbs-up"></i>
+						{{body.upvotes}}
+
+					</p>
+
+			</div>

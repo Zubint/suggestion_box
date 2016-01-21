@@ -1,0 +1,145 @@
+/* #C63D0F Rust Red */
+/* #3B3738; dark gray - very ncie */
+/* #DFE2DB  light gray */
+/* #FDF3E7; khaki color */
+/* #7E8F7C khaki green */
+/* #FFF056; Yellow */
+/* #191919;black */
+/* #A7C5C5; BOX SHADDOW: BLUE GRAY */
+/* F7FAFA; BOX BKG COLOR LIGHT BLUE GRAY */
+
+.main h1{
+	
+	font-family: 'Open Sans' sans-serif;
+
+}
+
+/* .navbar-collapse {
+	background-color: ;
+
+} */
+
+/* .navbar-header {
+	background-color: ;
+
+} */
+
+.postbkg {
+
+	position: relative;
+	top: 30px;
+/*	border-style: solid;
+	border-width: 1px;
+	border-color:#3B3738 ; */
+	box-shadow:  5px 5px 5px #A7C5C5; 
+	background-color: #F7FAFA; 
+	padding: 5px 10px 10px 35px;
+	margin-right: 20px;
+	margin-top: 20px;
+	white-space: normal;
+	border-radius: 2px;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+.recipeContainer h3{
+	color: #FF9933;
+	text-transform: capitalize;
+}
+
+.recipeContainer p{ /* Main ingredients */
+	color: #C63D0F;
+	text-transform: capitalize;
+}
+
+
+.recipeContainer p p i{
+	color: #C63D0F; /* Upvotes */
+
+}
+
+.recipeContainer  p i{
+	color: darkgreen; /* Like Icon */
+	font-size: 1.5em;
+
+}
+
+.recipeContainer  p i {
+	cursor: pointer;
+
+}
+
+
+.menu-search {
+
+	list-style: none; 
+
+}
+
+.header {
+	/* background: #FFF056 url("../img/lemons.jpg")  no-repeat fixed center;  */
+	background-image: url("../img/lemons.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 250px;
+	background-color: #FFF056;
+	background-position: top;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+	/* float: left;
+	padding-top: 65px;
+	position: relative; */
+}
+
+.header h1 {
+	padding-top: 60px;
+	margin-left: 10px;
+	color: #FDF3E7;
+	font-size: 2.2em;
+} 
+
+.header h2{
+	padding-left: 1.56em;
+	padding-top: .2em;
+	color: #FDF3E7;
+
+}
+
+.subHeading h2{
+	color: #C63D0F;
+}
+
+input[type="text"] {
+
+	position: relative;
+	top: 5px;
+	-moz-border-radius:5px;
+	font-family: Verdana, Helvetica, sans-serif;
+	margin-bottom: 10px;
+
+
+
+}
+
+
+.suggested-recipe{
+
+	padding-left: 15px;
+	
+	width: 75%;
+	height: 45px;
+	border-radius: 5px;
+
+}
+
+.dropdown li {
+	background-color: pink;
+
+
+}
+
+.navbar {
+	position:relative;
+	top:100px;
+}
+
