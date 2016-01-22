@@ -8,7 +8,7 @@ var app = angular.module('SuggestionBox', ['ngRoute']);
       'views/home.html'
     })
     .when('/suggestion/:id', {
-      controller:'SuggestionsController',
+      controller:'SuggestionController',
       templateUrl: 'views/suggestion.html'
     })
     .otherwise({
