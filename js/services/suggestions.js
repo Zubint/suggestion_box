@@ -6,7 +6,7 @@ app.factory('suggestions', [function(){
 			title: 'Beer Can Chicken Roast',
 			maining: 'Chicken, Beer, Herbs',
 			upvotes: 5,
-			comments: [{body: "hello hello", upvotes: 0}],
+			comments: [{body: "hello hello beer can Chicken", upvotes: 0}],
 		},
 		
 		{

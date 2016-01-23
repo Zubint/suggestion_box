@@ -1,7 +1,13 @@
 app.controller('HomeController', ['$scope', 'suggestions', function($scope, suggestions){
 
 	$scope.helloWorld = "Top 5 Upvoted recipies: ";
-	$scope.posts = suggestions.posts;
+	//$scope.posts = mySort(suggestions.posts);
+	$scope.posts = suggestions.posts.sort(function(a, b){
+
+				return b.upvotes - a.upvotes
+
+			});
+
 
 
 	$scope.addSuggestion = function(){
@@ -28,8 +34,11 @@ app.controller('HomeController', ['$scope', 'suggestions', function($scope, sugg
 	$scope.upVote = function(post){
 
 			 post.upvotes +=1
+			
 
 	};
+
+
 
 	
 }]);
