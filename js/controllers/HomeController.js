@@ -1,14 +1,10 @@
 app.controller('HomeController', ['$scope', 'suggestions', function($scope, suggestions){
 
 	$scope.helloWorld = "Top 5 Upvoted recipies: ";
-	//$scope.posts = mySort(suggestions.posts);
-	$scope.posts = suggestions.posts.sort(function(a, b){
 
-				return b.upvotes - a.upvotes
+	$scope.posts = suggestions.posts
 
-			});
-
-
+	
 
 	$scope.addSuggestion = function(){
 		 //Don't submit empty text
@@ -24,6 +20,7 @@ app.controller('HomeController', ['$scope', 'suggestions', function($scope, sugg
 			maining: $scope.post.maining,
 			upvotes: 0,
 			comments:[]
+			id: $scope.id.length +1
 		});
 			$scope.post.title ='';
 			$scope.post.maining =''; 
@@ -35,14 +32,19 @@ app.controller('HomeController', ['$scope', 'suggestions', function($scope, sugg
 
 			 post.upvotes +=1
 			
-
+			
 	};
-
-
+ 	
 
 	
 }]);
 
+
+// $scope.posts = suggestions.posts.sort(function(a, b){
+
+//				return b.upvotes - a.upvotes
+
+//			}); 
 
 
 

@@ -5,7 +5,7 @@
 				<h3> {{ helloWorld }} </h3>
 			</div>
 
-			<div class="postbkg" ng-repeat="post in posts">  <!--Sort Descending by upvotes --> 
+			<div class="postbkg" ng-repeat="post in posts | orderBy: '-upvotes'">  <!--Sort Descending by upvotes --> 
 				<div class="recipeContainer">
 						<h3>{{post.title}} </h3>
 						<p> {{post.maining}}</p>
@@ -13,7 +13,10 @@
 							<i class="fa fa-thumbs-up" ng-click="upVote(post)"></i>
 						 Upvotes: {{post.upvotes}}
 						</p> 
+
 						<a href="#/suggestion/{{$index}}">Comments</a>
+
+						<!-- <a href="#/suggestion/{{$index}}">Comments</a> -->
 				</div>
 			</div>
 

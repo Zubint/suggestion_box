@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"my",
+				"mySort"
+			],
+			[
+				"ob",
+				"obj1"
+			],
+			[
+				"upvote",
+				"upvotes"
+			],
+			[
 				"home",
 				"HomeController"
 			],
@@ -111,7 +123,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2817,
+				"buffer_size": 2919,
 				"line_ending": "Unix"
 			}
 		},
@@ -119,7 +131,7 @@
 			"file": "js/controllers/HomeController.js",
 			"settings":
 			{
-				"buffer_size": 622,
+				"buffer_size": 739,
 				"line_ending": "Unix"
 			}
 		},
@@ -127,24 +139,23 @@
 			"file": "views/home.html",
 			"settings":
 			{
-				"buffer_size": 1119,
+				"buffer_size": 1098,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/controllers/SuggestionsController.js",
+			"file": "js/controllers/SuggestionController.js",
 			"settings":
 			{
-				"buffer_size": 630,
-				"line_ending": "Unix",
-				"name": "app.controller('SuggestionController, ['$scope', '"
+				"buffer_size": 636,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "views/suggestion.html",
 			"settings":
 			{
-				"buffer_size": 539,
+				"buffer_size": 1267,
 				"line_ending": "Unix"
 			}
 		},
@@ -152,7 +163,7 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 406,
+				"buffer_size": 405,
 				"line_ending": "Unix"
 			}
 		},
@@ -160,7 +171,7 @@
 			"file": "js/services/suggestions.js",
 			"settings":
 			{
-				"buffer_size": 740,
+				"buffer_size": 757,
 				"line_ending": "Unix"
 			}
 		}
@@ -189,6 +200,9 @@
 	},
 	"file_history":
 	[
+		"/Users/zubintalib/Desktop/suggestion_box/js/helper.js",
+		"/Users/zubintalib/Desktop/suggestion_box/js/controllers/HomeController.js",
+		"/Users/zubintalib/Desktop/suggestion_box/js/controllers/SuggestionsController.js",
 		"/Users/zubintalib/Desktop/suggestion_box/views/home.html",
 		"/Users/zubintalib/Desktop/suggestion_box/js/services/suggestions.js",
 		"/Users/zubintalib/Desktop/suggestion_box/js/app.js",
@@ -297,7 +311,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -305,23 +319,24 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2817,
+						"buffer_size": 2919,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2252,
-								2252
+								931,
+								931
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 113.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -331,15 +346,15 @@
 					"file": "js/controllers/HomeController.js",
 					"settings":
 					{
-						"buffer_size": 622,
+						"buffer_size": 739,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								176,
-								176
+								493,
+								493
 							]
 						],
 						"settings":
@@ -358,15 +373,15 @@
 					"file": "views/home.html",
 					"settings":
 					{
-						"buffer_size": 1119,
+						"buffer_size": 1098,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								217,
+								217
 							]
 						],
 						"settings":
@@ -382,23 +397,22 @@
 				},
 				{
 					"buffer": 3,
-					"file": "js/controllers/SuggestionsController.js",
+					"file": "js/controllers/SuggestionController.js",
 					"settings":
 					{
-						"buffer_size": 630,
+						"buffer_size": 636,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								188,
-								188
+								131,
+								131
 							]
 						],
 						"settings":
 						{
-							"auto_name": "app.controller('SuggestionController, ['$scope', '",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -412,23 +426,24 @@
 					"file": "views/suggestion.html",
 					"settings":
 					{
-						"buffer_size": 539,
+						"buffer_size": 1267,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								189,
-								189
+								830,
+								830
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 70.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -438,15 +453,15 @@
 					"file": "js/app.js",
 					"settings":
 					{
-						"buffer_size": 406,
+						"buffer_size": 405,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								281,
-								281
+								280,
+								280
 							]
 						],
 						"settings":
@@ -466,15 +481,15 @@
 					"file": "js/services/suggestions.js",
 					"settings":
 					{
-						"buffer_size": 740,
+						"buffer_size": 757,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								246,
+								246
 							]
 						],
 						"settings":
