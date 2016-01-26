@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"suggestion",
+				"suggestionId"
+			],
+			[
 				"my",
 				"mySort"
 			],
@@ -120,10 +124,10 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "views/home.html",
 			"settings":
 			{
-				"buffer_size": 2919,
+				"buffer_size": 1194,
 				"line_ending": "Unix"
 			}
 		},
@@ -131,15 +135,7 @@
 			"file": "js/controllers/HomeController.js",
 			"settings":
 			{
-				"buffer_size": 739,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/home.html",
-			"settings":
-			{
-				"buffer_size": 1098,
+				"buffer_size": 781,
 				"line_ending": "Unix"
 			}
 		},
@@ -147,7 +143,7 @@
 			"file": "js/controllers/SuggestionController.js",
 			"settings":
 			{
-				"buffer_size": 636,
+				"buffer_size": 658,
 				"line_ending": "Unix"
 			}
 		},
@@ -155,7 +151,7 @@
 			"file": "views/suggestion.html",
 			"settings":
 			{
-				"buffer_size": 1267,
+				"buffer_size": 1313,
 				"line_ending": "Unix"
 			}
 		},
@@ -163,7 +159,7 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 405,
+				"buffer_size": 415,
 				"line_ending": "Unix"
 			}
 		},
@@ -171,7 +167,7 @@
 			"file": "js/services/suggestions.js",
 			"settings":
 			{
-				"buffer_size": 757,
+				"buffer_size": 856,
 				"line_ending": "Unix"
 			}
 		}
@@ -200,16 +196,17 @@
 	},
 	"file_history":
 	[
-		"/Users/zubintalib/Desktop/suggestion_box/js/helper.js",
-		"/Users/zubintalib/Desktop/suggestion_box/js/controllers/HomeController.js",
-		"/Users/zubintalib/Desktop/suggestion_box/js/controllers/SuggestionsController.js",
-		"/Users/zubintalib/Desktop/suggestion_box/views/home.html",
 		"/Users/zubintalib/Desktop/suggestion_box/js/services/suggestions.js",
 		"/Users/zubintalib/Desktop/suggestion_box/js/app.js",
+		"/Users/zubintalib/Desktop/suggestion_box/views/suggestion.html",
+		"/Users/zubintalib/Desktop/suggestion_box/index.html",
+		"/Users/zubintalib/Desktop/suggestion_box/js/controllers/HomeController.js",
+		"/Users/zubintalib/Desktop/suggestion_box/js/helper.js",
+		"/Users/zubintalib/Desktop/suggestion_box/js/controllers/SuggestionsController.js",
+		"/Users/zubintalib/Desktop/suggestion_box/views/home.html",
 		"/Users/zubintalib/Desktop/suggestion_box/css/main.css",
 		"/Users/zubintalib/Desktop/suggestion_box/views/suggestions.html",
 		"/Users/zubintalib/Desktop/suggestion_box/app.js",
-		"/Users/zubintalib/Desktop/suggestion_box/index.html",
 		"/Users/zubintalib/Desktop/suggestion_box/controllers/HomeController.js",
 		"/Users/zubintalib/Desktop/iZooky Website Compiled/index.html",
 		"/Users/zubintalib/Desktop/iZooky Website Compiled/assets/js/app.js",
@@ -311,23 +308,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "views/home.html",
 					"settings":
 					{
-						"buffer_size": 2919,
+						"buffer_size": 1194,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								931,
-								931
+								538,
+								538
 							]
 						],
 						"settings":
@@ -336,7 +333,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 113.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -346,15 +343,15 @@
 					"file": "js/controllers/HomeController.js",
 					"settings":
 					{
-						"buffer_size": 739,
+						"buffer_size": 781,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								493,
-								493
+								404,
+								404
 							]
 						],
 						"settings":
@@ -370,45 +367,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "views/home.html",
-					"settings":
-					{
-						"buffer_size": 1098,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								217,
-								217
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "js/controllers/SuggestionController.js",
 					"settings":
 					{
-						"buffer_size": 636,
+						"buffer_size": 658,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								131,
-								131
+								208,
+								208
 							]
 						],
 						"settings":
@@ -422,46 +392,45 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "views/suggestion.html",
 					"settings":
 					{
-						"buffer_size": 1267,
+						"buffer_size": 1313,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								830,
-								830
+								1313,
+								1313
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 70.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "js/app.js",
 					"settings":
 					{
-						"buffer_size": 405,
+						"buffer_size": 415,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								280,
-								280
+								0,
+								0
 							]
 						],
 						"settings":
@@ -477,19 +446,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "js/services/suggestions.js",
 					"settings":
 					{
-						"buffer_size": 757,
+						"buffer_size": 856,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								246,
-								246
+								825,
+								825
 							]
 						],
 						"settings":
@@ -498,7 +467,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 34.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
