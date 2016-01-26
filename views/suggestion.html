@@ -28,19 +28,18 @@ ng-model="body"></input>
   </form> -->
 
 
-
 		<div class="postbkg"> 
 				<div class="recipeContainer">
-						<h3>{{post.title}} </h3>
-						<p> {{post.maining}}</p>
+						<h3>{{suggestionPosts.title}} </h3>
+						<p> {{suggestionPosts.maining}}</p>
 						<p>
 							<i class="fa fa-thumbs-up"></i>
-						 Upvotes: {{post.upvotes}}
+						 Upvotes: {{suggestionPosts.upvotes}}
 						</p> 
 						<p>See comments for this recipe:</p> 
 				</div>
 
-				<div class="recipeContainer" ng-repeat="comment in post.comments">
+				<div class="recipeContainer" ng-repeat="comment in suggestionPosts.comments">
 					<p>{{comment.body}}</p>
 					<p>
 						<span class="glyphicon glyphicon-plus-sign"

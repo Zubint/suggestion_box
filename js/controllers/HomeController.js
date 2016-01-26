@@ -16,11 +16,12 @@ app.controller('HomeController', ['$scope', 'suggestions', function($scope, sugg
 		//push suggestion posts in suggestions.js
 
 		$scope.posts.push({
+			suggestionId: $scope.posts.length +1,
 			title: $scope.post.title,
 			maining: $scope.post.maining,
 			upvotes: 0,
 			comments:[]
-			id: $scope.id.length +1
+
 		});
 			$scope.post.title ='';
 			$scope.post.maining =''; 

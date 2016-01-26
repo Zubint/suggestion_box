@@ -7,7 +7,7 @@ var app = angular.module('SuggestionBox', ['ngRoute']);
       templateUrl:
       'views/home.html'
     })
-    .when('/suggestion/:id', {
+    .when('/suggestion/:suggestionId', {
       controller:'SuggestionController',
       templateUrl: 'views/suggestion.html'
     })
