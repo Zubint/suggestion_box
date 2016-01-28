@@ -1,23 +1,27 @@
 
 	<div class="container"> 
+
 			<div class="subHeading">
 				<h2> Great recipies, crowd-edited & upvoted to perfection!</h2>
 				<h3> {{ helloWorld }} </h3>
 			</div>
 
 			<div class="postbkg" ng-repeat="post in posts | orderBy: '-upvotes'">  <!--Sort Descending by upvotes --> 
-				<div class="recipeContainer">
-						<h3>{{post.title}} </h3>
-						<p> {{post.maining}}</p>
-						<p>
-							<i class="fa fa-thumbs-up" ng-click="upVote(post)"></i>
-						 Upvotes: {{post.upvotes}}
-						</p> 
+					<div class="recipeContainer">
+								<span>
+									<h3>{{$index+1}}.  
+									<img ng-src="{{post.image}}" style="margin-left: 10px"></h3>
+								</span>
+								
+								<span style="padding-left:20px;">
+									<h3>{{post.title}} </h3>
+									<p> {{post.maining}}</p> 
+									<p> <i class="fa fa-thumbs-up" ng-click="upVote(post)"></i>
+								 Upvotes: {{post.upvotes}}</p> 
+									<a href="#/suggestion/{{posts.indexOf(post)}}">Comments</a>
+								</span>
 
-						<a href="#/suggestion/{{post.suggestionId}}">Comments</a>
-
-						<!-- <a href="#/suggestion/{{$index}}">Comments</a>-->
-				</div>
+					</div>
 			</div>
 
 			<form ng-submit="addSuggestion()" style="margin-top: 50px">

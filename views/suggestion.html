@@ -1,50 +1,46 @@
 		<div class="postbkg"> 
-				<div class="recipeContainer">
-						<h3>{{suggestionPosts.title}} </h3>
-						<p> {{suggestionPosts.maining}}</p>
-						<p>
-							<i class="fa fa-thumbs-up"></i>
-						 Upvotes: {{suggestionPosts.upvotes}}
-						</p> 
-						<p>See comments for this recipe:</p> 
-				</div>
+			<div class="recipeContainer">
+				<!-- Show the selected recipe & comments -->
 
-				<div class="recipeContainer" ng-repeat="comment in suggestionPosts.comments">
-					<p>{{comment.body}}</p>
+				<span> 
+					<img ng-src="{{suggestionPosts.image}}" style="margin-right: 30px">
+				</span>
+
+				<span>
+					<h3 style="size: 1.5em;">{{suggestionPosts.title}}</h3>
+					<p> {{suggestionPosts.maining}}</p>
 					<p>
-						<span class="glyphicon glyphicon-plus-sign"
-ng-click="upVote(comment)"></span>
-    Comment Upvotes: {{comment.upvotes}}
-					</p>
+					<i class="fa fa-thumbs-up"></i>
+					Upvotes: {{suggestionPosts.upvotes}}
+					</p> 
+					<p>See comments for this recipe:</p> 
+				</span>
+			</div>
+
+			<!-- display the comments -->
+
+			<div class="recipeContainer" ng-repeat="comment in suggestionPosts.comments | orderBy: '-upvotes'">
+
+				<div class= "recipeComment" >
+					<p>{{$index+1}}.{{comment.body}}</p>
+					<i class="glyphicon glyphicon-plus-sign" ng-click="upVoteComment(comment)"></i>
+					Comment Upvotes: {{comment.upvotes}}
+				</div> 
 
 			</div>
 
+			<!-- Add a comment form -->
 
-			<!--Suggestions.html -->
+			<form ng-submit="addComment()" style="margin-top: 50px">
+				<h3> Comment on this recipe (you can suggest variations) </h3>
 
-		<!-- Display the recipe at the top of the page -->
+					<div class="form-group">
+						<textarea form="form-group" class="comment" name="Recipe Comment" placeholder="Type your comment in here" ng-model="suggestionPost.comment.body"></textarea>
+					</div>
 
+				<button type="submit" class="btn btn-primary">Comment!</button>
+			</form>
 
+</div>
 
-<!-- <h1 class="page-title"><em>{{post.title}}</em></h1>
-<hr>
-<div class="comment" ng-repeat="comment in post.comments | orderBy:'-upvotes'">
-    <span class="glyphicon glyphicon-plus-sign"
-ng-click="upVote(comment)"></span>
-    {{comment.upvotes}}
-    <span class="comment-body">
-      {{comment.body}}
-    </span>
-  </div>
-<!-- post template -->
-<!--  <form ng-submit="addComment()"
-style="margin-top:30px;">
-    <h3>Add a new comment</h3>
-    <div class="form-group">
-      <input type="text"
-class="form-control"
-placeholder="Comment"
-ng-model="body"></input>
-    </div>
-    <button type="submit" class="btn btn-primary">Comment</button>
-  </form> -->
+		

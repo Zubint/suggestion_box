@@ -5,30 +5,34 @@ app.controller('SuggestionController', ['$scope', '$routeParams', 'suggestions',
 		$scope.suggestionPosts = suggestions.posts[$routeParams.suggestionId];
 
 
+		$scope.addComment = function() {
+			
+			if ($scope.suggestionPost.comment.body === "" || !$scope.suggestionPost.comment.body) {
+
+//				return; //do not do anything if the  comment is empty
+			}
+
+				//otherwise, push the comments into the service
+
+				$scope.suggestionPosts.comments.push({
+					body: $scope.suggestionPost.comment.body, upvotes: 0
+
+				});
+			
+		
+					$scope.suggestionPost.comment.body ='';
+		};
+
+		$scope.upVoteComment = function(comment){
+
+			// $scope.suggestionPosts.comments.upvotes +=1  
+			 comment.upvotes +=1
+
+			};
+
+//			 
 
 }]);
 
 
-// $scope.addComment = function(){
-		 //Don't submit empty text //
-		
-//		 if($scope.post.comments === "" || !$scope.post.comments){
-//		 	return;
-//		}
-	 	
-		//push comments posts in suggestions.js
 
-//		$scope.posts.push({
-	
-//			comments: [$scope.post.comments.body, $scope.post.comments.upvotes],
-			
-//		});
-//			$scope.post.comments ='';
-		
-//	};
-
-//		$scope.upVote = function(comment){
-
-//			 $scope.post.comments.upvotes +=1  
-
-//			 

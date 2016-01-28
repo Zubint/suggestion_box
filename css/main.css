@@ -7,11 +7,19 @@
 /* #191919;black */
 /* #A7C5C5; BOX SHADDOW: BLUE GRAY */
 /* F7FAFA; BOX BKG COLOR LIGHT BLUE GRAY */
+/*  #eef9ed; Comment box green */
 
 .main h1{
 	
 	font-family: 'Open Sans' sans-serif;
 
+}
+
+h3{
+	font-family: 'Open Sans' sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #191919;
 }
 
 /* .navbar-collapse {
@@ -28,9 +36,6 @@
 
 	position: relative;
 	top: 30px;
-/*	border-style: solid;
-	border-width: 1px;
-	border-color:#3B3738 ; */
 	box-shadow:  5px 5px 5px #A7C5C5; 
 	background-color: #F7FAFA; 
 	padding: 5px 10px 10px 35px;
@@ -39,16 +44,20 @@
 	white-space: normal;
 	border-radius: 2px;
 	font-family: Verdana, Helvetica, sans-serif;
+	
+
 }
 
 .recipeContainer h3{
 	color: #FF9933;
 	text-transform: capitalize;
+
 }
 
 .recipeContainer p{ /* Main ingredients */
 	color: #C63D0F;
 	text-transform: capitalize;
+	
 }
 
 
@@ -60,6 +69,7 @@
 .recipeContainer  p i{
 	color: darkgreen; /* Like Icon */
 	font-size: 1.5em;
+	
 
 }
 
@@ -67,6 +77,25 @@
 	cursor: pointer;
 
 }
+
+.recipeContainer img{
+		float: right;
+		max-height: 150px;
+		vertical-align: center;
+		border-style: solid;
+		border-width: 2px;
+		border-radius: 5px;
+		border-color: #3B3738;
+		box-shadow: 3px 3px 3px #A7C5C5;
+
+
+}
+.recipeContainer span{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
 
 
 .menu-search {
@@ -125,16 +154,24 @@ input[type="text"] {
 .suggested-recipe{
 
 	padding-left: 15px;
-	
 	width: 75%;
 	height: 45px;
 	border-radius: 5px;
 
 }
 
+textarea{
+
+	padding-top: 15px;
+	padding-left: 15px;
+	width: 55%;
+	height: 150px;
+	border-radius: 5px;
+
+}
+
 .dropdown li {
 	background-color: pink;
-
 
 }
 
@@ -143,3 +180,26 @@ input[type="text"] {
 	top:100px;
 }
 
+.recipeComment{
+
+	position: relative;
+	top: 15px;
+	border-style: none;
+	border-width: 1px;
+	border-color:#3B3738; 
+	box-shadow:  5px 5px 5px #A7C5C5; 
+	background-color: #eef9ed; 
+	padding: 10px 10px 10px 55px;
+	margin-right: 20px;
+	margin-top: 20px;
+	white-space: normal;
+	border-radius: 2px;
+	font-family: Verdana, Helvetica, sans-serif;
+	width: 75%;
+	background-image: url('../img/speechbubble.png');
+	background-size: 35px auto;
+	background-repeat: no-repeat;
+	background-position: 10px ;
+	background-origin: padding-box;
+
+}
